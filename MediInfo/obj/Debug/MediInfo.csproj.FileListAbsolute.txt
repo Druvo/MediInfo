@@ -36,3 +36,5 @@ D:\Projects\MediInfo\MediInfo\obj\Debug\MediInfo.csproj.GenerateResource.cache
 D:\Projects\MediInfo\MediInfo\obj\Debug\MediInfo.csproj.CopyComplete
 D:\Projects\MediInfo\MediInfo\obj\Debug\MediInfo.exe
 D:\Projects\MediInfo\MediInfo\obj\Debug\MediInfo.pdb
+D:\Projects\MediInfo\MediInfo\obj\Debug\Csharp_Login_And_Register.LoginForm.resources
+D:\Projects\MediInfo\MediInfo\obj\Debug\Csharp_Login_And_Register.RegisterForm.resources
