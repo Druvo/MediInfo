@@ -58,7 +58,7 @@
             // 
             this.textBoxPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxPassword.ForeColor = System.Drawing.Color.Gray;
-            this.textBoxPassword.Location = new System.Drawing.Point(57, 313);
+            this.textBoxPassword.Location = new System.Drawing.Point(57, 359);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.Size = new System.Drawing.Size(537, 40);
             this.textBoxPassword.TabIndex = 4;
@@ -96,7 +96,7 @@
             // 
             this.textBoxUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxUsername.ForeColor = System.Drawing.Color.Gray;
-            this.textBoxUsername.Location = new System.Drawing.Point(57, 359);
+            this.textBoxUsername.Location = new System.Drawing.Point(57, 313);
             this.textBoxUsername.Multiline = true;
             this.textBoxUsername.Name = "textBoxUsername";
             this.textBoxUsername.Size = new System.Drawing.Size(537, 40);
@@ -150,9 +150,10 @@
             this.labelGoToSignUp.ForeColor = System.Drawing.Color.Black;
             this.labelGoToSignUp.Location = new System.Drawing.Point(268, 527);
             this.labelGoToSignUp.Name = "labelGoToSignUp";
-            this.labelGoToSignUp.Size = new System.Drawing.Size(126, 13);
+            this.labelGoToSignUp.Size = new System.Drawing.Size(127, 13);
             this.labelGoToSignUp.TabIndex = 203;
-            this.labelGoToSignUp.Text = "All ready registerd? LogIn";
+            this.labelGoToSignUp.Text = "Already registered? LogIn";
+            this.labelGoToSignUp.Click += new System.EventHandler(this.labelGoToSignUp_Click);
             // 
             // RegisterForm
             // 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Csharp_Login_And_Register;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -34,7 +35,9 @@ namespace MediInfo
 
         private void metroTile2_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            LoginForm login = new LoginForm();
+            login.Show();
         }
 
         private void metroTextBox1_Click(object sender, EventArgs e)

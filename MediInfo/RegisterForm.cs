@@ -299,5 +299,12 @@ namespace Csharp_Login_And_Register
         {
 
         }
+
+        private void labelGoToSignUp_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LoginForm login = new LoginForm();
+            login.Show();
+        }
     }
 }
