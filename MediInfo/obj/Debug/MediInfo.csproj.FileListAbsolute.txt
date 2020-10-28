@@ -48,7 +48,6 @@ C:\Users\Tiger-Park\Desktop\MediInfo\MediInfo\bin\Debug\MetroFramework.dll
 C:\Users\Tiger-Park\Desktop\MediInfo\MediInfo\bin\Debug\MetroFramework.Fonts.dll
 C:\Users\Tiger-Park\Desktop\MediInfo\MediInfo\bin\Debug\EntityFramework.xml
 C:\Users\Tiger-Park\Desktop\MediInfo\MediInfo\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Tiger-Park\Desktop\MediInfo\MediInfo\obj\Debug\MediInfo.csprojAssemblyReference.cache
 C:\Users\Tiger-Park\Desktop\MediInfo\MediInfo\obj\Debug\MediInfo.Create.resources
 C:\Users\Tiger-Park\Desktop\MediInfo\MediInfo\obj\Debug\MediInfo.Form1.resources
 C:\Users\Tiger-Park\Desktop\MediInfo\MediInfo\obj\Debug\Csharp_Login_And_Register.LoginForm.resources
@@ -60,3 +59,5 @@ C:\Users\Tiger-Park\Desktop\MediInfo\MediInfo\obj\Debug\MediInfo.csproj.CoreComp
 C:\Users\Tiger-Park\Desktop\MediInfo\MediInfo\obj\Debug\MediInfo.csproj.CopyComplete
 C:\Users\Tiger-Park\Desktop\MediInfo\MediInfo\obj\Debug\MediInfo.exe
 C:\Users\Tiger-Park\Desktop\MediInfo\MediInfo\obj\Debug\MediInfo.pdb
+C:\Users\Tiger-Park\Desktop\MediInfo\MediInfo\obj\Debug\MediInfo.Migrations.applicationc2.resources
+C:\Users\Tiger-Park\Desktop\MediInfo\MediInfo\obj\Debug\MediInfo.csprojAssemblyReference.cache

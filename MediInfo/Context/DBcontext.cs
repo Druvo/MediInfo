@@ -26,6 +26,8 @@ namespace MediInfo.Context
         public DbSet<Consumer> Consumer { get; set; }
         public DbSet<Medicine> Medicine { get; set; }
         public DbSet<Models.Type> Type { get; set; }
+        public DbSet<Categories> Categories { get; set; }
+        public DbSet<User> User { get; set; }
         public static DBcontext Create()
         {
             return new DBcontext();

@@ -1,4 +1,6 @@
-﻿namespace MediInfo
+﻿using System.Windows.Forms;
+
+namespace MediInfo
 {
     partial class Form1
     {
@@ -19,6 +21,10 @@
             }
             base.Dispose(disposing);
         }
+
+
+
+
 
         #region Windows Form Designer generated code
 
@@ -97,10 +103,11 @@
         }
 
         #endregion
-
-        private MetroFramework.Controls.MetroTile metroTile1;
         private MetroFramework.Controls.MetroTile metroTile2;
+        private MetroFramework.Controls.MetroTile metroTile1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private Label newLabel;
+
     }
 }
 
