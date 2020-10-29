@@ -25,128 +25,62 @@ namespace Csharp_Login_And_Register
 
         private void textBoxFirstname_Enter(object sender, EventArgs e)
         {
-            String fname = textBoxFirstname.Text;
-            if(fname.ToLower().Trim().Equals("first name"))
-            {
-                textBoxFirstname.Text = "";
-                textBoxFirstname.ForeColor = Color.Black;
-            }
+
         }
 
         private void textBoxFirstname_Leave(object sender, EventArgs e)
         {
-            String fname = textBoxFirstname.Text;
-            if (fname.ToLower().Trim().Equals("first name") || fname.Trim().Equals(""))
-            {
-                textBoxFirstname.Text = "first name";
-                textBoxFirstname.ForeColor = Color.Gray;
-            }
+
         }
 
         private void textBoxLastname_Enter(object sender, EventArgs e)
         {
-            String lname = textBoxLastname.Text;
-            if (lname.ToLower().Trim().Equals("last name"))
-            {
-                textBoxLastname.Text = "";
-                textBoxLastname.ForeColor = Color.Black;
-            }
+
         }
 
         private void textBoxLastname_Leave(object sender, EventArgs e)
         {
-            String lname = textBoxLastname.Text;
-            if (lname.ToLower().Trim().Equals("last name") || lname.Trim().Equals(""))
-            {
-                textBoxLastname.Text = "last name";
-                textBoxLastname.ForeColor = Color.Gray;
-            }
+
         }
 
         private void textBoxEmail_Enter(object sender, EventArgs e)
         {
-            String email = textBoxEmail.Text;
-            if (email.ToLower().Trim().Equals("email address"))
-            {
-                textBoxEmail.Text = "";
-                textBoxEmail.ForeColor = Color.Black;
-            }
+
         }
 
         private void textBoxEmail_Leave(object sender, EventArgs e)
         {
-            String email = textBoxEmail.Text;
-            if (email.ToLower().Trim().Equals("email address") || email.Trim().Equals(""))
-            {
-                textBoxEmail.Text = "email address";
-                textBoxEmail.ForeColor = Color.Gray;
-            }
+
         }
 
         private void textBoxUsername_Enter(object sender, EventArgs e)
         {
-            String username = textBoxUsername.Text;
-            if (username.ToLower().Trim().Equals("username"))
-            {
-                textBoxUsername.Text = "";
-                textBoxUsername.ForeColor = Color.Black;
-            }
+
         }
 
         private void textBoxUsername_Leave(object sender, EventArgs e)
         {
-            String username = textBoxUsername.Text;
-            if (username.ToLower().Trim().Equals("username") || username.Trim().Equals(""))
-            {
-                textBoxUsername.Text = "username";
-                textBoxUsername.ForeColor = Color.Gray;
-            }
+
         }
 
         private void textBoxPassword_Enter(object sender, EventArgs e)
         {
-            String password = textBoxPassword.Text;
-            if (password.ToLower().Trim().Equals("password"))
-            {
-                textBoxPassword.Text = "";
-                textBoxPassword.UseSystemPasswordChar = true;
-                textBoxPassword.ForeColor = Color.Black;
-            }
+
         }
 
         private void textBoxPassword_Leave(object sender, EventArgs e)
         {
-            String password = textBoxPassword.Text;
-            if (password.ToLower().Trim().Equals("password") || password.Trim().Equals(""))
-            {
-                textBoxPassword.Text = "password";
-                textBoxPassword.UseSystemPasswordChar = false;
-                textBoxPassword.ForeColor = Color.Gray;
-            }
+
         }
 
         private void textBoxPasswordConfirm_Enter(object sender, EventArgs e)
         {
-            String cpassword = textBoxPasswordConfirm.Text;
-            if (cpassword.ToLower().Trim().Equals("confirm password"))
-            {
-                textBoxPasswordConfirm.Text = "";
-                textBoxPasswordConfirm.UseSystemPasswordChar = true;
-                textBoxPasswordConfirm.ForeColor = Color.Black;
-            }
+
         }
 
         private void textBoxPasswordConfirm_Leave(object sender, EventArgs e)
         {
-            String cpassword = textBoxPasswordConfirm.Text;
-            if (cpassword.ToLower().Trim().Equals("confirm password") ||
-                cpassword.ToLower().Trim().Equals("password") ||
-                cpassword.Trim().Equals(""))
-            {
-                textBoxPasswordConfirm.Text = "confirm password";
-                textBoxPasswordConfirm.UseSystemPasswordChar = false;
-                textBoxPasswordConfirm.ForeColor = Color.Gray;
-            }
+
         }
 
         private void labelClose_Click(object sender, EventArgs e)
@@ -256,27 +190,7 @@ namespace Csharp_Login_And_Register
 
         }
 
-        // check if the textboxes contains the default values
-        public Boolean checkTextBoxesValues()
-        {
-            String fname = textBoxFirstname.Text;
-            String lname = textBoxLastname.Text;
-            String email = textBoxEmail.Text;
-            String uname = textBoxUsername.Text;
-            String pass = textBoxPassword.Text;
 
-            if(fname.Equals("first name") || lname.Equals("last name") || 
-                email.Equals("email address") || uname.Equals("username")
-                || pass.Equals("password"))
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-            
-        }
 
         private void labelGoToLogin_MouseEnter(object sender, EventArgs e)
         {
@@ -305,6 +219,71 @@ namespace Csharp_Login_And_Register
             this.Hide();
             LoginForm login = new LoginForm();
             login.Show();
+        }
+
+        private void textBoxEmail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxPassword_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxUsername_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxFirstname_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonLogin_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxPasswordConfirm_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
