@@ -60,4 +60,3 @@ C:\Users\Tiger-Park\Desktop\MediInfo\MediInfo\obj\Debug\MediInfo.csproj.CopyComp
 C:\Users\Tiger-Park\Desktop\MediInfo\MediInfo\obj\Debug\MediInfo.exe
 C:\Users\Tiger-Park\Desktop\MediInfo\MediInfo\obj\Debug\MediInfo.pdb
 C:\Users\Tiger-Park\Desktop\MediInfo\MediInfo\obj\Debug\MediInfo.Migrations.applicationc2.resources
-C:\Users\Tiger-Park\Desktop\MediInfo\MediInfo\obj\Debug\MediInfo.csprojAssemblyReference.cache

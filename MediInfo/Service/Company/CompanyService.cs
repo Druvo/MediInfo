@@ -19,7 +19,7 @@ namespace MediInfo.Service.Companys
 
         public void Insert(Company Company)
         {
-            _dbContext.Company.Add(Compare);
+            _dbContext.Company.Add(Company);
             _dbContext.SaveChanges();
         }
 
