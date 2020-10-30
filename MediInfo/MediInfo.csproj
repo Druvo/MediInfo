@@ -72,6 +72,12 @@
     <Compile Include="Create.Designer.cs">
       <DependentUpon>Create.cs</DependentUpon>
     </Compile>
+    <Compile Include="DoctorsDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoctorsDashboard.Designer.cs">
+      <DependentUpon>DoctorsDashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +137,9 @@
     <Compile Include="Service\Users\UserService.cs" />
     <EmbeddedResource Include="Create.resx">
       <DependentUpon>Create.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoctorsDashboard.resx">
+      <DependentUpon>DoctorsDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

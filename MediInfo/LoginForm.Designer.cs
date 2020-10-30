@@ -32,10 +32,11 @@
             this.textBoxUsername = new System.Windows.Forms.TextBox();
             this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.buttonLogin = new System.Windows.Forms.Button();
-            this.labelGoToSignUp = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -73,21 +74,6 @@
             this.buttonLogin.UseVisualStyleBackColor = false;
             this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
             // 
-            // labelGoToSignUp
-            // 
-            this.labelGoToSignUp.AutoSize = true;
-            this.labelGoToSignUp.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.labelGoToSignUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelGoToSignUp.ForeColor = System.Drawing.Color.Black;
-            this.labelGoToSignUp.Location = new System.Drawing.Point(203, 419);
-            this.labelGoToSignUp.Name = "labelGoToSignUp";
-            this.labelGoToSignUp.Size = new System.Drawing.Size(163, 13);
-            this.labelGoToSignUp.TabIndex = 6;
-            this.labelGoToSignUp.Text = "Don\'t Have an Account? SignUp";
-            this.labelGoToSignUp.Click += new System.EventHandler(this.labelGoToSignUp_Click);
-            this.labelGoToSignUp.MouseEnter += new System.EventHandler(this.labelGoToSignUp_MouseEnter);
-            this.labelGoToSignUp.MouseLeave += new System.EventHandler(this.labelGoToSignUp_MouseLeave);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -119,6 +105,33 @@
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Location = new System.Drawing.Point(162, 25);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(29, 25);
+            this.button1.TabIndex = 19;
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(169, 434);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(163, 13);
+            this.label3.TabIndex = 204;
+            this.label3.Text = "Don\'t Have an Account? SignUp";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -126,9 +139,10 @@
             this.AutoScroll = true;
             this.BorderStyle = MetroFramework.Forms.MetroFormBorderStyle.FixedSingle;
             this.ClientSize = new System.Drawing.Size(519, 467);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.labelGoToSignUp);
             this.Controls.Add(this.buttonLogin);
             this.Controls.Add(this.textBoxUsername);
             this.Controls.Add(this.textBoxPassword);
@@ -150,9 +164,10 @@
         private System.Windows.Forms.TextBox textBoxUsername;
         private System.Windows.Forms.TextBox textBoxPassword;
         private System.Windows.Forms.Button buttonLogin;
-        private System.Windows.Forms.Label labelGoToSignUp;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label3;
     }
 }

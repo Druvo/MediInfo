@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MediInfo;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -284,6 +285,13 @@ namespace Csharp_Login_And_Register
         private void textBoxPasswordConfirm_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 Form = new Form1();
+            Form.Show();
         }
     }
 }

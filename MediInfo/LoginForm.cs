@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MediInfo;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -39,6 +40,9 @@ namespace Csharp_Login_And_Register
 
         private void buttonLogin_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            DoctorsDashboard Form = new DoctorsDashboard();
+            Form.Show();
             //DB db = new DB();
 
             //String username = textBoxUsername.Text;
@@ -91,12 +95,12 @@ namespace Csharp_Login_And_Register
 
         private void labelGoToSignUp_MouseEnter(object sender, EventArgs e)
         {
-            labelGoToSignUp.ForeColor = Color.Yellow;
+            //labelGoToSignUp.ForeColor = Color.Yellow;
         }
 
         private void labelGoToSignUp_MouseLeave(object sender, EventArgs e)
         {
-            labelGoToSignUp.ForeColor = Color.White;
+            //labelGoToSignUp.ForeColor = Color.White;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -107,6 +111,20 @@ namespace Csharp_Login_And_Register
         private void LoginForm_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 Form = new Form1();
+            Form.Show();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            RegisterForm registerform = new RegisterForm();
+            registerform.Show();
         }
     }
 }

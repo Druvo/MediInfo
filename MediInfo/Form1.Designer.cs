@@ -78,7 +78,7 @@ namespace MediInfo
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(191, 8);
+            this.pictureBox1.Location = new System.Drawing.Point(203, 9);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(236, 210);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -132,6 +132,7 @@ namespace MediInfo
             this.MinimizeBox = false;
             this.Name = "Form1";
             this.Style = MetroFramework.MetroColorStyle.Green;
+            this.Text = "Home";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
