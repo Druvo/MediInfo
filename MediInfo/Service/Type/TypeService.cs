@@ -2,8 +2,7 @@
 using MediInfo.Models;
 using MediInfo.Service.Types;
 using System;
-
-
+using System.Linq;
 
 namespace MediInfo.Service.Types
 {
@@ -18,6 +17,12 @@ namespace MediInfo.Service.Types
         public void Delete(int Id)
         {
             throw new NotImplementedException();
+        }
+
+        public IQueryable<Models.Type> GetAllTypes()
+        {
+            var allType = from c in _dbContext.Type select c;
+            return allType;
         }
 
         public void Insert(Models.Type Type)

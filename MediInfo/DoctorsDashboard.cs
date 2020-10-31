@@ -28,5 +28,33 @@ namespace MediInfo
             Form1 Form = new Form1();
             Form.Show();
         }
+
+        private void metroTile4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            CategoriesForm Form = new CategoriesForm();
+            Form.Show();
+        }
+
+        private void metroTile5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            CompanyForm Form = new CompanyForm();
+            Form.Show();
+        }
+
+        private void metroTile6_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            TypeForm Form = new TypeForm();
+            Form.Show();
+        }
+
+        private void metroTile7_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ConsumerForm Form = new ConsumerForm();
+            Form.Show();
+        }
     }
 }

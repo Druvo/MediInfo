@@ -1,4 +1,5 @@
 ﻿using MediInfo.Models;
+using System.Linq;
 
 namespace MediInfo.Service.Types
 {
@@ -7,5 +8,6 @@ namespace MediInfo.Service.Types
         void Insert(Type Type);
         void Delete(int Id);
         void Update(Type Type);
+        IQueryable<Type> GetAllTypes();
     }
 }

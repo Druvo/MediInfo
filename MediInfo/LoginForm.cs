@@ -1,4 +1,5 @@
 ﻿using MediInfo;
+using MediInfo.Service.Users;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,11 +14,11 @@ namespace Csharp_Login_And_Register
 {
     public partial class LoginForm : MetroFramework.Forms.MetroForm
     {
-        
+        public IUserService _userService;
         public LoginForm()
         {
             InitializeComponent();
-
+            _userService = new UserService();
             this.textBoxPassword.AutoSize = false;
             this.textBoxPassword.Size = new Size(this.textBoxPassword.Size.Width, 50);
         }
@@ -40,49 +41,35 @@ namespace Csharp_Login_And_Register
 
         private void buttonLogin_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            DoctorsDashboard Form = new DoctorsDashboard();
-            Form.Show();
-            //DB db = new DB();
+            Cursor.Current = Cursors.WaitCursor;
 
-            //String username = textBoxUsername.Text;
-            //String password = textBoxPassword.Text;
 
-            //DataTable table = new DataTable();
+            String username = textBoxUsername.Text;
+            String password = textBoxPassword.Text;
 
-            //MySqlDataAdapter adapter = new MySqlDataAdapter();
-
-            //MySqlCommand command = new MySqlCommand("SELECT * FROM `users` WHERE `username` = @usn and `password` = @pass", db.getConnection());
-
-            //command.Parameters.Add("@usn", MySqlDbType.VarChar).Value = username;
-            //command.Parameters.Add("@pass", MySqlDbType.VarChar).Value = password;
-
-            //adapter.SelectCommand = command;
-
-            //adapter.Fill(table);
-
-            //// check if the user exists or not
-            //if (table.Rows.Count > 0)
-            //{
-            //    this.Hide();
-            //    MainForm mainform = new MainForm();
-            //    mainform.Show();
-            //}
-            //else
-            //{
-            //    if(username.Trim().Equals(""))
-            //    {
-            //        MessageBox.Show("Enter Your Username To Login","Empty Username",MessageBoxButtons.OK,MessageBoxIcon.Error);
-            //    }
-            //    else if (password.Trim().Equals(""))
-            //    {
-            //        MessageBox.Show("Enter Your Password To Login", "Empty Password", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //    }
-            //    else
-            //    {
-            //        MessageBox.Show("Wrong Username Or Password", "Wrong Data", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //    }
-            //}
+            // check if the user exists or not
+            if (_userService.is_valid(username,password))
+            {
+                this.Hide();
+                DoctorsDashboard Form = new DoctorsDashboard();
+                Form.Show();
+            }
+            else
+            {
+                if (username.Trim().Equals(""))
+                {
+                    MessageBox.Show("Enter Your Username To Login", "Empty Username", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else if (password.Trim().Equals(""))
+                {
+                    MessageBox.Show("Enter Your Password To Login", "Empty Password", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    MessageBox.Show("Wrong Username Or Password", "Wrong Data", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            Cursor.Current = Cursors.Default;
 
         }
 
@@ -125,6 +112,16 @@ namespace Csharp_Login_And_Register
             this.Hide();
             RegisterForm registerform = new RegisterForm();
             registerform.Show();
+        }
+
+        private void textBoxPassword_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxUsername_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

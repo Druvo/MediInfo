@@ -1,7 +1,7 @@
 ﻿using MediInfo.Context;
 using MediInfo.Models;
 using System;
-
+using System.Linq;
 
 namespace MediInfo.Service.Consumers
 {
@@ -16,6 +16,12 @@ namespace MediInfo.Service.Consumers
         public void Delete(int Id)
         {
             throw new NotImplementedException();
+        }
+
+        public IQueryable<Consumer> GetAllConsumer()
+        {
+            var allConsumer = from c in _dbContext.Consumer select c;
+            return allConsumer;
         }
 
         public void Insert(Consumer Consumer)

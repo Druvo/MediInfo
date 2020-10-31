@@ -1,4 +1,6 @@
 ﻿using MediInfo;
+using MediInfo.Models;
+using MediInfo.Service.Users;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,9 +15,13 @@ namespace Csharp_Login_And_Register
 {
     public partial class RegisterForm : MetroFramework.Forms.MetroForm
     {
+        public IUserService _userService;
+
         public RegisterForm()
         {
             InitializeComponent();
+            _userService = new UserService();
+
         }
 
         private void RegisterForm_Load(object sender, EventArgs e)
@@ -103,91 +109,23 @@ namespace Csharp_Login_And_Register
 
         private void buttonCreateAccount_Click(object sender, EventArgs e)
         {
-            //// add a new user
 
-            //DB db = new DB();
-            //MySqlCommand command = new MySqlCommand("INSERT INTO `users`(`firstname`, `lastname`, `emailaddress`, `username`, `password`) VALUES (@fn, @ln, @email, @usn, @pass)", db.getConnection());
-
-            //command.Parameters.Add("@fn", MySqlDbType.VarChar).Value = textBoxFirstname.Text;
-            //command.Parameters.Add("@ln", MySqlDbType.VarChar).Value = textBoxLastname.Text;
-            //command.Parameters.Add("@email", MySqlDbType.VarChar).Value = textBoxEmail.Text;
-            //command.Parameters.Add("@usn", MySqlDbType.VarChar).Value = textBoxUsername.Text;
-            //command.Parameters.Add("@pass", MySqlDbType.VarChar).Value = textBoxPassword.Text;
-
-            //// open the connection
-            //db.openConnection();
-
-            //// check if the textboxes contains the default values 
-            //if (!checkTextBoxesValues())
-            //{
-            //    // check if the password equal the confirm password
-            //    if(textBoxPassword.Text.Equals(textBoxPasswordConfirm.Text))
-            //    {
-            //        // check if this username already exists
-            //        if (checkUsername())
-            //        {
-            //            MessageBox.Show("This Username Already Exists, Select A Different One","Duplicate Username",MessageBoxButtons.OKCancel,MessageBoxIcon.Error);
-            //        }
-            //        else
-            //        {
-            //            // execute the query
-            //            if (command.ExecuteNonQuery() == 1)
-            //            {
-            //                MessageBox.Show("Your Account Has Been Created","Account Created",MessageBoxButtons.OK,MessageBoxIcon.Information);
-            //            }
-            //            else
-            //            {
-            //                MessageBox.Show("ERROR");
-            //            }
-            //        }
-            //    }
-            //    else
-            //    {
-            //        MessageBox.Show("Wrong Confirmation Password","Password Error",MessageBoxButtons.OKCancel,MessageBoxIcon.Error);
-            //    }
-                
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Enter Your Informations First","Empty Data",MessageBoxButtons.OKCancel,MessageBoxIcon.Error);
-            //}
-            
-            
-
-            //// close the connection
-            //db.closeConnection();
 
         }
 
         
         // check if the username already exists
-        public Boolean checkUsername()
+        public Boolean checkUsername(string email)
         {
-            //DB db = new DB();
 
-            //String username = textBoxUsername.Text;
-
-            //DataTable table = new DataTable();
-
-            //MySqlDataAdapter adapter = new MySqlDataAdapter();
-
-            //MySqlCommand command = new MySqlCommand("SELECT * FROM `users` WHERE `username` = @usn", db.getConnection());
-
-            //command.Parameters.Add("@usn", MySqlDbType.VarChar).Value = username;
-
-            //adapter.SelectCommand = command;
-
-            //adapter.Fill(table);
-
-            //// check if this username already exists in the database
-            //if (table.Rows.Count > 0)
-            //{
+            if (_userService.check_existing_user(email))
+            {
                 return true;
-            //}
-            //else
-            //{
-            //    return false;
-            //}
+            }
+            else
+            {
+                return false;
+            }
 
         }
 
@@ -271,10 +209,91 @@ namespace Csharp_Login_And_Register
         {
 
         }
-
+        public bool checkTextBoxesValues(string name, string email, string bio, string passs, string cpass)
+        {
+            bool is_valid = true;
+            if (string.IsNullOrWhiteSpace(name))
+            {
+                MessageBox.Show("Please enter your name!", "Invalid input", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
+                is_valid = false;
+            }
+            if (string.IsNullOrWhiteSpace(email))
+            {
+                MessageBox.Show("Please enter your email!", "Invalid input", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
+                is_valid = false;
+            }            
+            if (string.IsNullOrWhiteSpace(bio))
+            {
+                MessageBox.Show("Please enter your bio!", "Invalid input", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
+                is_valid = false;
+            }            
+            if (string.IsNullOrWhiteSpace(passs))
+            {
+                MessageBox.Show("Please enter a password!", "Invalid input", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
+                is_valid = false;
+            }            
+            if (string.IsNullOrWhiteSpace(cpass))
+            {
+                MessageBox.Show("Please confirm your password", "Invalid input", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
+                is_valid = false;
+            }
+            return is_valid;
+        }
         private void buttonLogin_Click(object sender, EventArgs e)
         {
+            //// add a new user
+            Cursor.Current = Cursors.WaitCursor;
+            string name = textBoxFirstname.Text;
+            string email = textBoxEmail.Text;
+            //string user = textBoxUsername.Text;
+            string bio = textBox1.Text;
+            string passs = textBoxPassword.Text;
+            string cpass = textBoxPasswordConfirm.Text;
+            if (checkTextBoxesValues(name, email, bio, passs, cpass))
+            {
+                // check if the password equal the confirm password
+                if (passs.Equals(cpass))
+                {
+                    // check if this username already exists
+                    if (checkUsername(email))
+                    {
+                        MessageBox.Show("This Email Already Exists, Select A Different One", "Duplicate Username", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
+                    }
+                    else
+                    {
+                        User user = new User();
+                        user.Email = email;
+                        user.Password = passs;
+                        user.Username = "";
+                        user.Name = name;
+                        user.Bio = bio;
+                        user.IsActive = false;
+                        
+                        // execute the query
+                        if (_userService.Insert(user))
+                        {
+                            MessageBox.Show("Your Account Has Been Created", "Account Created", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            this.Hide();
+                            LoginForm login = new LoginForm();
+                            login.Show();
+                        }
+                        else
+                        {
+                            MessageBox.Show("ERROR");
+                        }
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Wrong Confirmation Password", "Password Error", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
+                }
 
+            }
+            else
+            {
+                MessageBox.Show("Enter Your Informations First", "Empty Data", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
+            }
+            Cursor.Current = Cursors.Default;
         }
 
         private void label3_Click(object sender, EventArgs e)

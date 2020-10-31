@@ -143,7 +143,7 @@ namespace MediInfo
         private MetroFramework.Controls.MetroTile metroTile2;
         private MetroFramework.Controls.MetroTile metroTile1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private Label newLabel;
+        //private Label newLabel;
         private MetroFramework.Controls.MetroTile metroTile3;
         private MetroFramework.Controls.MetroTile metroTile4;
     }

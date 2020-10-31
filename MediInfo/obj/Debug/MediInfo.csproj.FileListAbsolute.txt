@@ -27,7 +27,6 @@ D:\Projects\MediInfo\MediInfo\bin\Debug\MetroFramework.dll
 D:\Projects\MediInfo\MediInfo\bin\Debug\MetroFramework.Fonts.dll
 D:\Projects\MediInfo\MediInfo\bin\Debug\EntityFramework.xml
 D:\Projects\MediInfo\MediInfo\bin\Debug\EntityFramework.SqlServer.xml
-D:\Projects\MediInfo\MediInfo\obj\Debug\MediInfo.csprojAssemblyReference.cache
 D:\Projects\MediInfo\MediInfo\obj\Debug\MediInfo.Create.resources
 D:\Projects\MediInfo\MediInfo\obj\Debug\MediInfo.Form1.resources
 D:\Projects\MediInfo\MediInfo\obj\Debug\MediInfo.Migrations.applicationC1.resources
@@ -62,3 +61,10 @@ C:\Users\Tiger-Park\Desktop\MediInfo\MediInfo\obj\Debug\MediInfo.pdb
 C:\Users\Tiger-Park\Desktop\MediInfo\MediInfo\obj\Debug\MediInfo.Migrations.applicationc2.resources
 C:\Users\Tiger-Park\Desktop\MediInfo\MediInfo\obj\Debug\MediInfo.DoctorsDashboard.resources
 C:\Users\Tiger-Park\Desktop\MediInfo\MediInfo\obj\Debug\MediInfo.csprojAssemblyReference.cache
+D:\Projects\MediInfo\MediInfo\obj\Debug\MediInfo.DoctorsDashboard.resources
+D:\Projects\MediInfo\MediInfo\obj\Debug\MediInfo.Migrations.applicationc2.resources
+D:\Projects\MediInfo\MediInfo\obj\Debug\MediInfo.csprojAssemblyReference.cache
+D:\Projects\MediInfo\MediInfo\obj\Debug\MediInfo.CategoriesForm.resources
+D:\Projects\MediInfo\MediInfo\obj\Debug\MediInfo.CompanyForm.resources
+D:\Projects\MediInfo\MediInfo\obj\Debug\MediInfo.TypeForm.resources
+D:\Projects\MediInfo\MediInfo\obj\Debug\MediInfo.ConsumerForm.resources

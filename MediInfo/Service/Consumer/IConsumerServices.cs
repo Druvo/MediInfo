@@ -8,5 +8,6 @@ namespace MediInfo.Service.Consumers
         void Insert(Consumer Consumer);
         void Delete(int Id);
         void Update(Consumer Consumer);
+        IQueryable<Consumer> GetAllConsumer();
     }
 }

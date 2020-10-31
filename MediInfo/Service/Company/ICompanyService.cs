@@ -1,4 +1,5 @@
 ﻿using MediInfo.Models;
+using System.Linq;
 
 namespace MediInfo.Service.Companys
 {
@@ -7,5 +8,6 @@ namespace MediInfo.Service.Companys
         void Insert(Company Compare);
         void Delete(int Id);
         void Update(Company Compare);
+        IQueryable<Company> GetAllCompny();
     }
 }
