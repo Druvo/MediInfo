@@ -51,7 +51,7 @@ namespace Csharp_Login_And_Register
             if (_userService.is_valid(username,password))
             {
                 this.Hide();
-                DoctorsDashboard Form = new DoctorsDashboard();
+                Form1 Form = new Form1();
                 Form.Show();
             }
             else

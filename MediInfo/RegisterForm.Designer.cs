@@ -42,7 +42,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -101,7 +100,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(207, 7);
+            this.pictureBox1.Location = new System.Drawing.Point(208, 8);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(236, 210);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -116,9 +115,9 @@
             this.buttonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonLogin.ForeColor = System.Drawing.Color.White;
-            this.buttonLogin.Location = new System.Drawing.Point(404, 496);
+            this.buttonLogin.Location = new System.Drawing.Point(455, 496);
             this.buttonLogin.Name = "buttonLogin";
-            this.buttonLogin.Size = new System.Drawing.Size(178, 55);
+            this.buttonLogin.Size = new System.Drawing.Size(127, 55);
             this.buttonLogin.TabIndex = 202;
             this.buttonLogin.Text = "REGISTER";
             this.buttonLogin.UseVisualStyleBackColor = false;
@@ -130,7 +129,7 @@
             this.labelGoToSignUp.Cursor = System.Windows.Forms.Cursors.Hand;
             this.labelGoToSignUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelGoToSignUp.ForeColor = System.Drawing.Color.Black;
-            this.labelGoToSignUp.Location = new System.Drawing.Point(262, 568);
+            this.labelGoToSignUp.Location = new System.Drawing.Point(280, 563);
             this.labelGoToSignUp.Name = "labelGoToSignUp";
             this.labelGoToSignUp.Size = new System.Drawing.Size(127, 13);
             this.labelGoToSignUp.TabIndex = 203;
@@ -203,27 +202,12 @@
             this.label3.Text = "Bio";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.White;
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Location = new System.Drawing.Point(186, 26);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(29, 25);
-            this.button2.TabIndex = 213;
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // RegisterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BorderStyle = MetroFramework.Forms.MetroFormBorderStyle.FixedSingle;
             this.ClientSize = new System.Drawing.Size(639, 611);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label6);
@@ -264,6 +248,5 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button2;
     }
 }

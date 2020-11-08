@@ -35,9 +35,9 @@ namespace MediInfo
 
         private void metroTile2_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            LoginForm login = new LoginForm();
-            login.Show();
+            //this.Hide();
+            //LoginForm login = new LoginForm();
+            //login.Show();
         }
 
         private void metroTextBox1_Click(object sender, EventArgs e)
@@ -53,6 +53,13 @@ namespace MediInfo
         private void pictureBox1_Click_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void metroTile10_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            DoctorsDashboard login = new DoctorsDashboard();
+            login.Show();
         }
     }
 }

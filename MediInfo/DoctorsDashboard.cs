@@ -56,5 +56,12 @@ namespace MediInfo
             ConsumerForm Form = new ConsumerForm();
             Form.Show();
         }
+
+        private void metroTile1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MedicineForm Form = new MedicineForm();
+            Form.Show();
+        }
     }
 }

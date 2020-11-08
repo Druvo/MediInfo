@@ -115,6 +115,12 @@
     <Compile Include="Mapping\UserMap.cs" />
     <Compile Include="Mapping\CategoriesMap.cs" />
     <Compile Include="Mapping\TypeMap.cs" />
+    <Compile Include="MedicineForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicineForm.Designer.cs">
+      <DependentUpon>MedicineForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\202010180745578_application-C1.cs" />
     <Compile Include="Migrations\202010180745578_application-C1.designer.cs">
       <DependentUpon>202010180745578_application-C1.cs</DependentUpon>
@@ -179,6 +185,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicineForm.resx">
+      <DependentUpon>MedicineForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202010180745578_application-C1.resx">
       <DependentUpon>202010180745578_application-C1.cs</DependentUpon>

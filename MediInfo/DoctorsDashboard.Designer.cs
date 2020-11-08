@@ -29,9 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DoctorsDashboard));
-            this.metroTile3 = new MetroFramework.Controls.MetroTile();
             this.metroTile1 = new MetroFramework.Controls.MetroTile();
-            this.metroTile2 = new MetroFramework.Controls.MetroTile();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.metroTile4 = new MetroFramework.Controls.MetroTile();
             this.metroTile5 = new MetroFramework.Controls.MetroTile();
@@ -40,21 +38,6 @@
             this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // metroTile3
-            // 
-            this.metroTile3.ActiveControl = null;
-            this.metroTile3.Location = new System.Drawing.Point(266, 324);
-            this.metroTile3.Name = "metroTile3";
-            this.metroTile3.Size = new System.Drawing.Size(196, 149);
-            this.metroTile3.Style = MetroFramework.MetroColorStyle.Green;
-            this.metroTile3.TabIndex = 13;
-            this.metroTile3.Text = "Appointments";
-            this.metroTile3.TileImage = ((System.Drawing.Image)(resources.GetObject("metroTile3.TileImage")));
-            this.metroTile3.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.metroTile3.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
-            this.metroTile3.UseSelectable = true;
-            this.metroTile3.UseTileImage = true;
             // 
             // metroTile1
             // 
@@ -70,26 +53,12 @@
             this.metroTile1.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
             this.metroTile1.UseSelectable = true;
             this.metroTile1.UseTileImage = true;
-            // 
-            // metroTile2
-            // 
-            this.metroTile2.ActiveControl = null;
-            this.metroTile2.Location = new System.Drawing.Point(468, 324);
-            this.metroTile2.Name = "metroTile2";
-            this.metroTile2.Size = new System.Drawing.Size(193, 150);
-            this.metroTile2.Style = MetroFramework.MetroColorStyle.Green;
-            this.metroTile2.TabIndex = 11;
-            this.metroTile2.Text = "Profile";
-            this.metroTile2.TileImage = ((System.Drawing.Image)(resources.GetObject("metroTile2.TileImage")));
-            this.metroTile2.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.metroTile2.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
-            this.metroTile2.UseSelectable = true;
-            this.metroTile2.UseTileImage = true;
+            this.metroTile1.Click += new System.EventHandler(this.metroTile1_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(247, 6);
+            this.pictureBox1.Location = new System.Drawing.Point(168, 10);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(236, 210);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -131,9 +100,9 @@
             // metroTile6
             // 
             this.metroTile6.ActiveControl = null;
-            this.metroTile6.Location = new System.Drawing.Point(517, 171);
+            this.metroTile6.Location = new System.Drawing.Point(65, 324);
             this.metroTile6.Name = "metroTile6";
-            this.metroTile6.Size = new System.Drawing.Size(144, 147);
+            this.metroTile6.Size = new System.Drawing.Size(214, 147);
             this.metroTile6.Style = MetroFramework.MetroColorStyle.Green;
             this.metroTile6.TabIndex = 16;
             this.metroTile6.Text = "Add Type";
@@ -147,9 +116,9 @@
             // metroTile7
             // 
             this.metroTile7.ActiveControl = null;
-            this.metroTile7.Location = new System.Drawing.Point(64, 324);
+            this.metroTile7.Location = new System.Drawing.Point(285, 324);
             this.metroTile7.Name = "metroTile7";
-            this.metroTile7.Size = new System.Drawing.Size(196, 150);
+            this.metroTile7.Size = new System.Drawing.Size(226, 147);
             this.metroTile7.Style = MetroFramework.MetroColorStyle.Green;
             this.metroTile7.TabIndex = 17;
             this.metroTile7.Text = "Add Consumers";
@@ -178,19 +147,17 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(714, 543);
+            this.ClientSize = new System.Drawing.Size(580, 543);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.metroTile7);
             this.Controls.Add(this.metroTile6);
             this.Controls.Add(this.metroTile5);
             this.Controls.Add(this.metroTile4);
-            this.Controls.Add(this.metroTile3);
             this.Controls.Add(this.metroTile1);
-            this.Controls.Add(this.metroTile2);
             this.Controls.Add(this.pictureBox1);
             this.Name = "DoctorsDashboard";
             this.Style = MetroFramework.MetroColorStyle.Green;
-            this.Text = "Dashboard";
+            this.Text = "Medicines";
             this.Load += new System.EventHandler(this.DoctorsDashboard_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -198,9 +165,7 @@
         }
 
         #endregion
-        private MetroFramework.Controls.MetroTile metroTile3;
         private MetroFramework.Controls.MetroTile metroTile1;
-        private MetroFramework.Controls.MetroTile metroTile2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private MetroFramework.Controls.MetroTile metroTile4;
         private MetroFramework.Controls.MetroTile metroTile5;
