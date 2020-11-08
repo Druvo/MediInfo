@@ -61,5 +61,26 @@ namespace MediInfo
             DoctorsDashboard login = new DoctorsDashboard();
             login.Show();
         }
+
+        private void metroTile9_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            BookAppointmentForm login = new BookAppointmentForm();
+            login.Show();
+        }
+
+        private void metroTile2_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            POS pos = new POS();
+            pos.Show();
+        }
+
+        private void metroTile4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AboutForm pos = new AboutForm();
+            pos.Show();
+        }
     }
 }

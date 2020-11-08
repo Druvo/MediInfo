@@ -78,7 +78,6 @@ D:\Projects\Personal\MediInfo\MediInfo\bin\Debug\MetroFramework.dll
 D:\Projects\Personal\MediInfo\MediInfo\bin\Debug\MetroFramework.Fonts.dll
 D:\Projects\Personal\MediInfo\MediInfo\bin\Debug\EntityFramework.xml
 D:\Projects\Personal\MediInfo\MediInfo\bin\Debug\EntityFramework.SqlServer.xml
-D:\Projects\Personal\MediInfo\MediInfo\obj\Debug\MediInfo.csprojAssemblyReference.cache
 D:\Projects\Personal\MediInfo\MediInfo\obj\Debug\MediInfo.CategoriesForm.resources
 D:\Projects\Personal\MediInfo\MediInfo\obj\Debug\MediInfo.CompanyForm.resources
 D:\Projects\Personal\MediInfo\MediInfo\obj\Debug\MediInfo.ConsumerForm.resources
@@ -96,3 +95,13 @@ D:\Projects\Personal\MediInfo\MediInfo\obj\Debug\MediInfo.csproj.CopyComplete
 D:\Projects\Personal\MediInfo\MediInfo\obj\Debug\MediInfo.exe
 D:\Projects\Personal\MediInfo\MediInfo\obj\Debug\MediInfo.pdb
 D:\Projects\Personal\MediInfo\MediInfo\obj\Debug\MediInfo.MedicineForm.resources
+D:\Projects\Personal\MediInfo\MediInfo\obj\Debug\MediInfo.BookAppointmentForm.resources
+D:\Projects\Personal\MediInfo\MediInfo\obj\Debug\MediInfo.Migrations.ApplicationC3.resources
+D:\Projects\Personal\MediInfo\MediInfo\obj\Debug\MediInfo.Migrations.ApplicationC4.resources
+D:\Projects\Personal\MediInfo\MediInfo\obj\Debug\MediInfo.POS.resources
+D:\Projects\Personal\MediInfo\MediInfo\obj\Debug\MediInfo.Stock.resources
+D:\Projects\Personal\MediInfo\MediInfo\obj\Debug\MediInfo.Migrations.ApplicationC5.resources
+D:\Projects\Personal\MediInfo\MediInfo\obj\Debug\MediInfo.Migrations.ApplicationC6.resources
+D:\Projects\Personal\MediInfo\MediInfo\obj\Debug\MediInfo.AboutForm.resources
+D:\Projects\Personal\MediInfo\MediInfo\obj\Debug\MediInfo.Migrations.ApplicationC7.resources
+D:\Projects\Personal\MediInfo\MediInfo\obj\Debug\MediInfo.Migrations.ApplicationC8.resources

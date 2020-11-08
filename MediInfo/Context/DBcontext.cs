@@ -11,7 +11,7 @@ namespace MediInfo.Context
 {
     public class DBcontext : DbContext
     {
-        public DBcontext () : base("name=DefaultConnection") { }
+        public DBcontext() : base("name=DefaultConnection") { }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Configurations.Add(new MedicineMap());
@@ -28,6 +28,9 @@ namespace MediInfo.Context
         public DbSet<Models.Type> Type { get; set; }
         public DbSet<Categories> Categories { get; set; }
         public DbSet<User> User { get; set; }
+        public DbSet<Appointment> Appointment { get; set; }
+        //public DbSet<Stock> stock { get; set; }
+
         public static DBcontext Create()
         {
             return new DBcontext();

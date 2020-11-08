@@ -68,6 +68,7 @@ namespace MediInfo
             this.metroTile4.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
             this.metroTile4.UseSelectable = true;
             this.metroTile4.UseTileImage = true;
+            this.metroTile4.Click += new System.EventHandler(this.metroTile4_Click);
             // 
             // metroTile9
             // 
@@ -83,6 +84,7 @@ namespace MediInfo
             this.metroTile9.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
             this.metroTile9.UseSelectable = true;
             this.metroTile9.UseTileImage = true;
+            this.metroTile9.Click += new System.EventHandler(this.metroTile9_Click);
             // 
             // metroTile10
             // 
@@ -114,6 +116,7 @@ namespace MediInfo
             this.metroTile2.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
             this.metroTile2.UseSelectable = true;
             this.metroTile2.UseTileImage = true;
+            this.metroTile2.Click += new System.EventHandler(this.metroTile2_Click_1);
             // 
             // Form1
             // 

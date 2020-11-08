@@ -17,6 +17,8 @@ namespace MediInfo.Models
         public string Code_name { get; set; }
         public string Ingredient { get; set; }
         public int Alternative { get; set; }
+        public int? Quantity { get; set; }
+        public int? Price { get; set; }
         public int Consumer { get; set; }
         public DateTime Created_at { get; set; }
         public DateTime Updated_at { get; set; }

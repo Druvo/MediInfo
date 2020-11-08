@@ -8,5 +8,6 @@ namespace MediInfo.Service.Medicines
         void Insert(Medicine Medicine);
         void Delete(int Id);
         void Update(Medicine Medicine);
+        IQueryable<Medicine> GetAllMedi();
     }
 }

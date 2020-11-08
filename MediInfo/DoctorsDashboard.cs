@@ -63,5 +63,17 @@ namespace MediInfo
             MedicineForm Form = new MedicineForm();
             Form.Show();
         }
+
+        private void metroTile10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 Form = new Form1();
+            Form.Show();
+        }
     }
 }

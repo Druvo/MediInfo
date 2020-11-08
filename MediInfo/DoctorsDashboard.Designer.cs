@@ -35,7 +35,7 @@
             this.metroTile5 = new MetroFramework.Controls.MetroTile();
             this.metroTile6 = new MetroFramework.Controls.MetroTile();
             this.metroTile7 = new MetroFramework.Controls.MetroTile();
-            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -102,7 +102,7 @@
             this.metroTile6.ActiveControl = null;
             this.metroTile6.Location = new System.Drawing.Point(65, 324);
             this.metroTile6.Name = "metroTile6";
-            this.metroTile6.Size = new System.Drawing.Size(214, 147);
+            this.metroTile6.Size = new System.Drawing.Size(220, 147);
             this.metroTile6.Style = MetroFramework.MetroColorStyle.Green;
             this.metroTile6.TabIndex = 16;
             this.metroTile6.Text = "Add Type";
@@ -116,9 +116,9 @@
             // metroTile7
             // 
             this.metroTile7.ActiveControl = null;
-            this.metroTile7.Location = new System.Drawing.Point(285, 324);
+            this.metroTile7.Location = new System.Drawing.Point(291, 324);
             this.metroTile7.Name = "metroTile7";
-            this.metroTile7.Size = new System.Drawing.Size(226, 147);
+            this.metroTile7.Size = new System.Drawing.Size(220, 147);
             this.metroTile7.Style = MetroFramework.MetroColorStyle.Green;
             this.metroTile7.TabIndex = 17;
             this.metroTile7.Text = "Add Consumers";
@@ -129,26 +129,26 @@
             this.metroTile7.UseTileImage = true;
             this.metroTile7.Click += new System.EventHandler(this.metroTile7_Click);
             // 
-            // button1
+            // button2
             // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Location = new System.Drawing.Point(142, 25);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(29, 26);
-            this.button1.TabIndex = 18;
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button2.BackColor = System.Drawing.Color.White;
+            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.Location = new System.Drawing.Point(133, 24);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(29, 25);
+            this.button2.TabIndex = 28;
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // DoctorsDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(580, 543);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(580, 586);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.metroTile7);
             this.Controls.Add(this.metroTile6);
             this.Controls.Add(this.metroTile5);
@@ -171,6 +171,6 @@
         private MetroFramework.Controls.MetroTile metroTile5;
         private MetroFramework.Controls.MetroTile metroTile6;
         private MetroFramework.Controls.MetroTile metroTile7;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

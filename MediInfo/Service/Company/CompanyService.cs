@@ -24,6 +24,12 @@ namespace MediInfo.Service.Companys
             return allCompany;
         }
 
+        public Company GetCompanyById(int Id)
+        {
+            var com = from c in _dbContext.Company where c.Id.Equals(Id) select c;
+            return com.FirstOrDefault();
+        }
+
         public void Insert(Company Company)
         {
             _dbContext.Company.Add(Company);

@@ -65,6 +65,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BookAppointmentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookAppointmentForm.Designer.cs">
+      <DependentUpon>BookAppointmentForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="CategoriesForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,6 +120,7 @@
     <Compile Include="LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Mapping\AppointmentMap.cs" />
     <Compile Include="Mapping\CompanyMap.cs" />
     <Compile Include="Mapping\CompareMap.cs" />
     <Compile Include="Mapping\ConsumerMap.cs" />
@@ -129,7 +142,33 @@
     <Compile Include="Migrations\202010281858304_application-c2.designer.cs">
       <DependentUpon>202010281858304_application-c2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202011081208175_Application-C3.cs" />
+    <Compile Include="Migrations\202011081208175_Application-C3.designer.cs">
+      <DependentUpon>202011081208175_Application-C3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011081210547_Application-C4.cs" />
+    <Compile Include="Migrations\202011081210547_Application-C4.designer.cs">
+      <DependentUpon>202011081210547_Application-C4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011081308390_Application-C5.cs" />
+    <Compile Include="Migrations\202011081308390_Application-C5.designer.cs">
+      <DependentUpon>202011081308390_Application-C5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011081310041_Application-C6.cs" />
+    <Compile Include="Migrations\202011081310041_Application-C6.designer.cs">
+      <DependentUpon>202011081310041_Application-C6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011081341492_Application-C7.cs" />
+    <Compile Include="Migrations\202011081341492_Application-C7.designer.cs">
+      <DependentUpon>202011081341492_Application-C7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011081344222_Application-C8.cs" />
+    <Compile Include="Migrations\202011081344222_Application-C8.designer.cs">
+      <DependentUpon>202011081344222_Application-C8.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Stock.cs" />
+    <Compile Include="Models\Appointment.cs" />
     <Compile Include="Models\Categories.cs" />
     <Compile Include="Models\Company.cs" />
     <Compile Include="Models\Compare.cs" />
@@ -137,6 +176,12 @@
     <Compile Include="Models\Medicine.cs" />
     <Compile Include="Models\Type.cs" />
     <Compile Include="Models\User.cs" />
+    <Compile Include="POS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POS.Designer.cs">
+      <DependentUpon>POS.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RegisterForm.cs">
@@ -145,6 +190,8 @@
     <Compile Include="RegisterForm.Designer.cs">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Service\Appointment\AppointmentService.cs" />
+    <Compile Include="Service\Appointment\IAppointmentServices.cs" />
     <Compile Include="Service\Type\TypeService.cs" />
     <Compile Include="Service\Type\ITypeServices.cs" />
     <Compile Include="Service\Medicine\MedicineService.cs" />
@@ -159,12 +206,24 @@
     <Compile Include="Service\Company\CompanyService.cs" />
     <Compile Include="Service\Users\IUserService.cs" />
     <Compile Include="Service\Users\UserService.cs" />
+    <Compile Include="Stock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stock.Designer.cs">
+      <DependentUpon>Stock.cs</DependentUpon>
+    </Compile>
     <Compile Include="TypeForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="TypeForm.Designer.cs">
       <DependentUpon>TypeForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookAppointmentForm.resx">
+      <DependentUpon>BookAppointmentForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CategoriesForm.resx">
       <DependentUpon>CategoriesForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -195,6 +254,27 @@
     <EmbeddedResource Include="Migrations\202010281858304_application-c2.resx">
       <DependentUpon>202010281858304_application-c2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011081208175_Application-C3.resx">
+      <DependentUpon>202011081208175_Application-C3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011081210547_Application-C4.resx">
+      <DependentUpon>202011081210547_Application-C4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011081308390_Application-C5.resx">
+      <DependentUpon>202011081308390_Application-C5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011081310041_Application-C6.resx">
+      <DependentUpon>202011081310041_Application-C6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011081341492_Application-C7.resx">
+      <DependentUpon>202011081341492_Application-C7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011081344222_Application-C8.resx">
+      <DependentUpon>202011081344222_Application-C8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POS.resx">
+      <DependentUpon>POS.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
@@ -202,6 +282,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RegisterForm.resx">
       <DependentUpon>RegisterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock.resx">
+      <DependentUpon>Stock.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TypeForm.resx">
       <DependentUpon>TypeForm.cs</DependentUpon>

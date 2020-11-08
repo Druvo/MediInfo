@@ -19,6 +19,12 @@ namespace MediInfo.Service.Medicines
             throw new NotImplementedException();
         }
 
+        public IQueryable<Medicine> GetAllMedi()
+        {
+            var allCompany = from c in _dbContext.Medicine select c;
+            return allCompany;
+        }
+
         public void Insert(Medicine Medicine)
         {
             _dbContext.Medicine.Add(Medicine);

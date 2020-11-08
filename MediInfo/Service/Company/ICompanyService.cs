@@ -7,6 +7,7 @@ namespace MediInfo.Service.Companys
     {
         void Insert(Company Compare);
         void Delete(int Id);
+        Company GetCompanyById(int Id);
         void Update(Company Compare);
         IQueryable<Company> GetAllCompny();
     }
