@@ -21,5 +21,12 @@ namespace MediInfo
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 Form = new Form1();
+            Form.Show();
+        }
     }
 }

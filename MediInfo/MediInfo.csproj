@@ -96,6 +96,21 @@
       <DependentUpon>ConsumerForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Context\DBcontext.cs" />
+    <Compile Include="CustomerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerForm.Designer.cs">
+      <DependentUpon>CustomerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011090255124_application-c9.cs" />
+    <Compile Include="Migrations\202011090255124_application-c9.designer.cs">
+      <DependentUpon>202011090255124_application-c9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011090257503_application-c10.cs" />
+    <Compile Include="Migrations\202011090257503_application-c10.designer.cs">
+      <DependentUpon>202011090257503_application-c10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Customers.cs" />
     <Compile Include="Create.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -167,13 +182,15 @@
       <DependentUpon>202011081344222_Application-C8.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\Stock.cs" />
+    <Compile Include="Models\Invoice.cs" />
+    <Compile Include="Models\MediStock.cs" />
     <Compile Include="Models\Appointment.cs" />
     <Compile Include="Models\Categories.cs" />
     <Compile Include="Models\Company.cs" />
     <Compile Include="Models\Compare.cs" />
     <Compile Include="Models\Consumer.cs" />
     <Compile Include="Models\Medicine.cs" />
+    <Compile Include="Models\SalesDetails.cs" />
     <Compile Include="Models\Type.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="POS.cs">
@@ -192,6 +209,8 @@
     </Compile>
     <Compile Include="Service\Appointment\AppointmentService.cs" />
     <Compile Include="Service\Appointment\IAppointmentServices.cs" />
+    <Compile Include="Service\Customer\CustemerServices.cs.cs" />
+    <Compile Include="Service\Customer\ICustemerServices.cs" />
     <Compile Include="Service\Type\TypeService.cs" />
     <Compile Include="Service\Type\ITypeServices.cs" />
     <Compile Include="Service\Medicine\MedicineService.cs" />
@@ -236,6 +255,9 @@
     <EmbeddedResource Include="Create.resx">
       <DependentUpon>Create.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CustomerForm.resx">
+      <DependentUpon>CustomerForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DoctorsDashboard.resx">
       <DependentUpon>DoctorsDashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -271,6 +293,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202011081344222_Application-C8.resx">
       <DependentUpon>202011081344222_Application-C8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011090255124_application-c9.resx">
+      <DependentUpon>202011090255124_application-c9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011090257503_application-c10.resx">
+      <DependentUpon>202011090257503_application-c10.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="POS.resx">
       <DependentUpon>POS.cs</DependentUpon>

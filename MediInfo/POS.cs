@@ -1,4 +1,5 @@
-﻿using MediInfo.Service.Medicines;
+﻿using MediInfo.Service.Consumers;
+using MediInfo.Service.Medicines;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,15 +12,29 @@ using System.Windows.Forms;
 
 namespace MediInfo
 {
-    public partial class POS : MetroFramework.Forms.MetroForm
+    public partial class posForm : MetroFramework.Forms.MetroForm
     {
         public IMedicineService _medicineService;
+        public ICustemerServices _customerService;
 
-        public POS()
+        public posForm()
         {
             InitializeComponent();
             _medicineService = new MedicineService();
+            _customerService = new CustemerServices();
 
+
+
+             var medi = _medicineService.GetAllMedi().ToList();
+             var cus = _customerService.GetAllCustomers().ToList();
+
+            metroComboBox1.DisplayMember = "Name";
+            metroComboBox1.ValueMember = "Id";
+            metroComboBox1.DataSource = medi;
+
+            metroComboBox2.DisplayMember = "Name";
+            metroComboBox2.ValueMember = "Id";
+            metroComboBox2.DataSource = cus;
             initList();
 
         }
@@ -30,16 +45,16 @@ namespace MediInfo
         }
         public void initList()
         {
-            metroListView1.Items.Clear();
-            foreach (var item in _medicineService.GetAllMedi())
-            {
-                ListViewItem i = new ListViewItem(item.Id.ToString());
-                i.SubItems.Add(item.Name);
-                i.SubItems.Add(item.Code_name);
-                i.SubItems.Add(item.Price.ToString());
-                i.SubItems.Add(item.Quantity.ToString());
-                metroListView1.Items.Add(i);
-            }
+            //metroListView1.Items.Clear();
+            //foreach (var item in _medicineService.GetAllMedi())
+            //{
+            //    ListViewItem i = new ListViewItem(item.Id.ToString());
+            //    i.SubItems.Add(item.Name);
+            //    i.SubItems.Add(item.Code_name);
+            //    //i.SubItems.Add(item.Price.ToString());
+            //    //i.SubItems.Add(item.Quantity.ToString());
+            //    metroListView1.Items.Add(i);
+            //}
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -54,6 +69,16 @@ namespace MediInfo
         }
 
         private void metroListView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void metroComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void metroComboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

@@ -126,7 +126,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BorderStyle = MetroFramework.Forms.MetroFormBorderStyle.FixedSingle;
-            this.ClientSize = new System.Drawing.Size(519, 467);
+            this.ClientSize = new System.Drawing.Size(560, 470);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -135,10 +135,13 @@
             this.Controls.Add(this.textBoxPassword);
             this.Controls.Add(this.pictureBox1);
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(560, 470);
             this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(560, 470);
             this.Name = "LoginForm";
             this.Style = MetroFramework.MetroColorStyle.Green;
             this.Text = "Doctor Login";
+            this.TopMost = true;
             this.Load += new System.EventHandler(this.LoginForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

@@ -222,10 +222,13 @@
             this.Controls.Add(this.textBoxEmail);
             this.Controls.Add(this.pictureBox1);
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(639, 611);
             this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(639, 611);
             this.Name = "RegisterForm";
             this.Style = MetroFramework.MetroColorStyle.Green;
-            this.Text = "Doctor Register";
+            this.Text = "Register";
+            this.TopMost = true;
             this.Load += new System.EventHandler(this.RegisterForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

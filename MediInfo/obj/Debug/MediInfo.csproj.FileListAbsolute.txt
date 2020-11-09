@@ -98,10 +98,13 @@ D:\Projects\Personal\MediInfo\MediInfo\obj\Debug\MediInfo.MedicineForm.resources
 D:\Projects\Personal\MediInfo\MediInfo\obj\Debug\MediInfo.BookAppointmentForm.resources
 D:\Projects\Personal\MediInfo\MediInfo\obj\Debug\MediInfo.Migrations.ApplicationC3.resources
 D:\Projects\Personal\MediInfo\MediInfo\obj\Debug\MediInfo.Migrations.ApplicationC4.resources
-D:\Projects\Personal\MediInfo\MediInfo\obj\Debug\MediInfo.POS.resources
 D:\Projects\Personal\MediInfo\MediInfo\obj\Debug\MediInfo.Stock.resources
 D:\Projects\Personal\MediInfo\MediInfo\obj\Debug\MediInfo.Migrations.ApplicationC5.resources
 D:\Projects\Personal\MediInfo\MediInfo\obj\Debug\MediInfo.Migrations.ApplicationC6.resources
 D:\Projects\Personal\MediInfo\MediInfo\obj\Debug\MediInfo.AboutForm.resources
 D:\Projects\Personal\MediInfo\MediInfo\obj\Debug\MediInfo.Migrations.ApplicationC7.resources
 D:\Projects\Personal\MediInfo\MediInfo\obj\Debug\MediInfo.Migrations.ApplicationC8.resources
+D:\Projects\Personal\MediInfo\MediInfo\obj\Debug\MediInfo.Migrations.applicationc9.resources
+D:\Projects\Personal\MediInfo\MediInfo\obj\Debug\MediInfo.Migrations.applicationc10.resources
+D:\Projects\Personal\MediInfo\MediInfo\obj\Debug\MediInfo.CustomerForm.resources
+D:\Projects\Personal\MediInfo\MediInfo\obj\Debug\MediInfo.posForm.resources

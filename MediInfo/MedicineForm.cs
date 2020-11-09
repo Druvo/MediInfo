@@ -122,8 +122,8 @@ namespace MediInfo
             medicine.Tags = "";
             medicine.Type = Convert.ToInt32(type);
             medicine.Alternative = Convert.ToInt32(1);
-            medicine.Quantity = Convert.ToInt32(qnt);
-            medicine.Price = Convert.ToInt32(price);
+            //medicine.Quantity = Convert.ToInt32(qnt);
+            //medicine.Price = Convert.ToInt32(price);
             _medicineService.Insert(medicine);
             initList();
 

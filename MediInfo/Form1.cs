@@ -72,7 +72,7 @@ namespace MediInfo
         private void metroTile2_Click_1(object sender, EventArgs e)
         {
             this.Hide();
-            POS pos = new POS();
+            posForm pos = new posForm();
             pos.Show();
         }
 
@@ -80,6 +80,13 @@ namespace MediInfo
         {
             this.Hide();
             AboutForm pos = new AboutForm();
+            pos.Show();
+        }
+
+        private void metroTile3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            CustomerForm pos = new CustomerForm();
             pos.Show();
         }
     }

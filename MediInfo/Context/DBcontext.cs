@@ -29,6 +29,10 @@ namespace MediInfo.Context
         public DbSet<Categories> Categories { get; set; }
         public DbSet<User> User { get; set; }
         public DbSet<Appointment> Appointment { get; set; }
+        public DbSet<Customers> Customers { get; set; }
+        public DbSet<SalesDetails> SalesDetails { get; set; }
+        public DbSet<MediStock> MediStock { get; set; }
+        public DbSet<Invoice> Invoice { get; set; }
         //public DbSet<Stock> stock { get; set; }
 
         public static DBcontext Create()
